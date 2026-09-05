@@ -32,7 +32,7 @@ app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(days=14)
 # Gerçek bir projede bunun yerine bir veritabanı (ör. SQLAlchemy + bir users
 # tablosu) kullanın. Burada tek amaç, dashboard'u parola ile korumak.
 USERS = {
-    "admin": generate_password_hash(os.environ.get("ADMIN_PASSWORD", "changeme123")),
+    "admin": generate_password_hash(os.environ.get("garantibes", "emeklilik789.")),
 }
 
 
