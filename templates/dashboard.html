@@ -742,6 +742,13 @@ body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; 
 </style>
 </head>
 <body>
+  <div style="position:fixed; top:16px; right:16px; z-index:9999; display:flex; align-items:center; gap:8px;">
+    <span class="badge slate" style="box-shadow:0 10px 22px rgba(15,23,42,0.18);">
+      <span style="width:8px; height:8px; border-radius:999px; background:#34d399; display:inline-block;"></span>
+      {{ user }}
+    </span>
+    <a href="{{ url_for('logout') }}" class="badge ghost" style="background:#0f172a; text-decoration:none;">Çıkış Yap</a>
+  </div>
   <div id="app"></div>
   <script>// === overview ===
 const overview = {
